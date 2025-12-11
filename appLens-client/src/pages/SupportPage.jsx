@@ -92,10 +92,50 @@ const SupportPage = () => {
     }
   ];
 
-  const handleContactSubmit = (e) => {
+  const handleContactSubmit = async (e) => {
     e.preventDefault();
-    console.log('Contact form submitted:', contactForm);
-    alert('Thank you for your message! We\'ll get back to you soon.');
+    
+    try {
+      // Send email via backend
+      const response = await fetch('/api/contact/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          to: 'govind.d5578@gmail.com',
+          from: contactForm.email,
+          subject: `[${contactForm.category.toUpperCase()}] ${contactForm.subject}`,
+          message: contactForm.message,
+          priority: contactForm.priority,
+          userEmail: contactForm.email,
+        }),
+      });
+
+      if (response.ok) {
+        alert('Thank you for your message! We\'ll get back to you soon.');
+        // Reset form
+        setContactForm({
+          subject: '',
+          category: 'general',
+          message: '',
+          email: '',
+          priority: 'medium'
+        });
+      } else {
+        alert('Failed to send message. Please try again or email us directly at govind.d5578@gmail.com');
+      }
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert('Error sending message. Please try emailing us directly at govind.d5578@gmail.com');
+    }
+  };
+
+  const handleStartChat = () => {
+    const phoneNumber = '9985070132';
+    const message = 'Hello! I would like to chat with you about AppLens.';
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   const TabButton = ({ tab, isActive, onClick }) => (
@@ -140,6 +180,7 @@ const SupportPage = () => {
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: 'auto', opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.3, ease: 'easeInOut' }}
               className="px-4 pb-4"
             >
               <p className="text-slate-600 dark:text-slate-400">{faq.answer}</p>
@@ -208,7 +249,10 @@ const SupportPage = () => {
               <MessageSquare className="w-8 h-8 text-blue-600 dark:text-blue-400 mx-auto mb-4" />
               <h3 className="text-slate-900 dark:text-white font-medium mb-2">Live Chat</h3>
               <p className="text-slate-600 dark:text-slate-400 text-sm mb-4">Chat with our team</p>
-              <button className="text-blue-600 dark:text-blue-400 text-sm font-medium hover:text-blue-700 dark:hover:text-blue-300">
+              <button 
+                onClick={handleStartChat}
+                className="text-blue-600 dark:text-blue-400 text-sm font-medium hover:text-blue-700 dark:hover:text-blue-300 cursor-pointer transition-colors duration-200"
+              >
                 Start Chat
               </button>
             </motion.div>

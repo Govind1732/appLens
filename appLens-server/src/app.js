@@ -11,6 +11,7 @@ import datasetRoutes from './routes/datasetRoutes.js';
 import aiRoutes from './routes/aiRoutes.js';
 import chartRoutes from './routes/chartRoutes.js';
 import analyticsRoutes from './routes/analyticsRoutes.js';
+import contactRoutes from './routes/contactRoutes.js';
 
 // Load environment variables
 dotenv.config();
@@ -31,6 +32,7 @@ app.use('/api/datasets', datasetRoutes);
 app.use('/api/insights', aiRoutes);
 app.use('/api/charts', chartRoutes);
 app.use('/api/analytics', analyticsRoutes);
+app.use('/api/contact', contactRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {
