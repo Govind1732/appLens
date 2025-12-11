@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AppLens Landing Page</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#4A90E2",
+              "accent": "#50E3C2",
+              "background-light": "#f5f5f5",
+              "background-dark": "#121212",
+              "surface-dark": "#1A1A2E",
+              "text-light": "#121212",
+              "text-dark": "#F5F5F5",
+              "text-muted-light": "#AAB8C2",
+              "text-muted-dark": "#AAB8C2"
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark antialiased">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-5xl flex-1">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 px-6 sm:px-10 py-3">
+<div class="flex items-center gap-4">
+<div class="size-6 text-primary">
+<span class="material-symbols-outlined text-3xl">query_stats</span>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">AppLens</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-white/90 hover:text-white text-sm font-medium leading-normal" href="#">Features</a>
+<a class="text-white/90 hover:text-white text-sm font-medium leading-normal" href="#">How it Works</a>
+<a class="text-white/90 hover:text-white text-sm font-medium leading-normal" href="#">Pricing</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-primary/90 text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Get Started</span>
+</button>
+</div>
+</header>
+<main class="flex flex-col gap-16 md:gap-24 py-16 md:py-24">
+<!-- HeroSection -->
+<section class="@container">
+<div class="flex flex-col gap-10 px-4 py-10 items-center text-center">
+<div class="flex flex-col gap-4 max-w-3xl">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                                        AppLens – AI dashboards for any app in minutes
+                                    </h1>
+<h2 class="text-text-muted-dark text-base font-normal leading-normal @[480px]:text-lg @[480px]:font-normal @[480px]:leading-relaxed">
+                                        Connect your data, let AI build your dashboards, and get instant answers about your business — without writing SQL or building analytics from scratch.
+                                    </h2>
+</div>
+<div class="flex-wrap gap-3 flex">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary hover:bg-primary/90 text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+<span class="truncate">Get Started</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-surface-dark hover:bg-white/10 text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+<span class="truncate">View Live Demo</span>
+</button>
+</div>
+<div class="flex flex-col sm:flex-row flex-wrap justify-center gap-x-6 gap-y-3 pt-6 text-sm text-text-muted-dark">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-accent text-base">database</span>
+<span>Connect CSV / JSON / databases</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-accent text-base">auto_awesome</span>
+<span>Auto-generated charts &amp; KPIs</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-accent text-base">chat</span>
+<span>AI summaries and “ask your data” chat</span>
+</div>
+</div>
+</div>
+</section>
+<!-- FeatureSection: Why AppLens? -->
+<section class="flex flex-col gap-10 px-4 @container">
+<div class="flex flex-col gap-4 text-center items-center">
+<h2 class="text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+                                    Why AppLens?
+                                </h2>
+<p class="text-text-muted-dark text-base font-normal leading-normal max-w-[720px]">
+                                    Unlock insights for every role in your organization. AppLens provides tailored benefits for founders, developers, and teams.
+                                </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-0">
+<div class="flex flex-1 gap-3 rounded-xl border border-white/10 bg-surface-dark p-6 flex-col">
+<div class="text-accent">
+<span class="material-symbols-outlined text-3xl">rocket_launch</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-white text-base font-bold leading-tight">For Founders</h3>
+<p class="text-text-muted-dark text-sm font-normal leading-normal">
+                                            Get a real-time pulse on your business KPIs without relying on an analytics team. Make data-driven decisions faster.
+                                        </p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-white/10 bg-surface-dark p-6 flex-col">
+<div class="text-accent">
+<span class="material-symbols-outlined text-3xl">code</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-white text-base font-bold leading-tight">For Developers</h3>
+<p class="text-text-muted-dark text-sm font-normal leading-normal">
+                                            Skip the boilerplate of building internal tools. Connect data sources and get a functional dashboard in minutes.
+                                        </p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-white/10 bg-surface-dark p-6 flex-col">
+<div class="text-accent">
+<span class="material-symbols-outlined text-3xl">groups</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-white text-base font-bold leading-tight">For Teams</h3>
+<p class="text-text-muted-dark text-sm font-normal leading-normal">
+                                            Collaborate on insights, share dashboards, and create a single source of truth for your company's metrics.
+                                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Timeline: How it works -->
+<section class="flex flex-col gap-6 px-4">
+<h2 class="text-white text-[28px] font-bold leading-tight tracking-[-0.015em] text-center">How AppLens Works</h2>
+<div class="grid grid-cols-[40px_1fr] gap-x-4">
+<div class="flex flex-col items-center gap-2 pt-3">
+<div class="text-primary bg-primary/20 rounded-full p-2">
+<span class="material-symbols-outlined">database</span>
+</div>
+<div class="w-[2px] bg-white/10 h-full"></div>
+</div>
+<div class="flex flex-1 flex-col pb-8 pt-3">
+<h3 class="text-white text-lg font-medium leading-normal">1. Connect your data</h3>
+<p class="text-text-muted-dark text-base font-normal leading-normal">Securely link your CSV, JSON, or databases with our intuitive connectors.</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-[2px] bg-white/10 h-full"></div>
+<div class="text-primary bg-primary/20 rounded-full p-2">
+<span class="material-symbols-outlined">bar_chart</span>
+</div>
+<div class="w-[2px] bg-white/10 h-full"></div>
+</div>
+<div class="flex flex-1 flex-col pb-8 pt-3">
+<h3 class="text-white text-lg font-medium leading-normal">2. Build your dashboard</h3>
+<p class="text-text-muted-dark text-base font-normal leading-normal">Our AI analyzes your schema and automatically generates relevant charts and KPIs.</p>
+</div>
+<div class="flex flex-col items-center gap-2 pb-3">
+<div class="w-[2px] bg-white/10 h-full"></div>
+<div class="text-primary bg-primary/20 rounded-full p-2">
+<span class="material-symbols-outlined">chat_bubble</span>
+</div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<h3 class="text-white text-lg font-medium leading-normal">3. Let AI explain</h3>
+<p class="text-text-muted-dark text-base font-normal leading-normal">Use natural language to ask questions about your data and get instant AI-powered summaries.</p>
+</div>
+</div>
+</section>
+<!-- Key Features Section -->
+<section class="flex flex-col gap-10 px-4 @container">
+<div class="flex flex-col gap-4 text-center items-center">
+<h2 class="text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+                                    Key Features
+                                </h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-3 rounded-xl border border-white/10 bg-surface-dark p-6">
+<div class="text-accent"><span class="material-symbols-outlined text-3xl">schema</span></div>
+<h3 class="text-white text-base font-bold leading-tight">Schema-aware</h3>
+<p class="text-text-muted-dark text-sm font-normal leading-normal">AppLens understands your data structure to suggest the most relevant visualizations automatically.</p>
+</div>
+<div class="flex flex-col gap-3 rounded-xl border border-white/10 bg-surface-dark p-6">
+<div class="text-accent"><span class="material-symbols-outlined text-3xl">dynamic_form</span></div>
+<h3 class="text-white text-base font-bold leading-tight">Dynamic chart builder</h3>
+<p class="text-text-muted-dark text-sm font-normal leading-normal">Go beyond presets. Customize, filter, and drill down into your data with our powerful chart editor.</p>
+</div>
+<div class="flex flex-col gap-3 rounded-xl border border-white/10 bg-surface-dark p-6">
+<div class="text-accent"><span class="material-symbols-outlined text-3xl">psychology</span></div>
+<h3 class="text-white text-base font-bold leading-tight">AI-native analytics</h3>
+<p class="text-text-muted-dark text-sm font-normal leading-normal">Ask questions in plain English and get narrative summaries, anomaly detection, and forecasts.</p>
+</div>
+<div class="flex flex-col gap-3 rounded-xl border border-white/10 bg-surface-dark p-6">
+<div class="text-accent"><span class="material-symbols-outlined text-3xl">cached</span></div>
+<h3 class="text-white text-base font-bold leading-tight">Reusable across projects</h3>
+<p class="text-text-muted-dark text-sm font-normal leading-normal">Define your metrics once and reuse them across different dashboards and applications.</p>
+</div>
+</div>
+</section>
+<!-- Example Showcase Section -->
+<section class="flex flex-col gap-6 md:gap-10 px-4">
+<div class="flex flex-col gap-2 text-center items-center">
+<h2 class="text-white text-[28px] font-bold leading-tight tracking-[-0.015em]">Example: Sanvi Marketplace</h2>
+<p class="text-text-muted-dark text-base font-normal leading-normal max-w-2xl">See how a leading e-commerce platform uses AppLens to monitor sales, track user engagement, and optimize inventory in real-time.</p>
+</div>
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl border border-white/10" data-alt="A clean and modern dashboard UI for Sanvi Marketplace showing charts for sales, user engagement, and inventory levels." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDzOeZ3k_qhFd-ZvmEIC-Z08qqh_b1UBZ_sB0bVb2dBEfQN_X_RQNKy9HNaf-2gCHiy-Sp_y3g2UEHj_WIKsehrTKa6WTOMAWH7lmmDaZKwhh8HYZB-m2UX1ntWJiHjjfvTM-eURZuaNaqH3z4ADVfTx7Q2O2IrCw-Z9WBvClIIQQQSKSlultqAJeBGzBjSwC1aCwm14XEbGKYob7eELOwNZBqvvrwwp8HBtpoksePAnrD2451VJkbs0p-lCP1GRq_Fy995QJBSQdI");'></div>
+</section>
+<!-- Technology Stack Section -->
+<section class="flex flex-col gap-8 px-4 items-center">
+<h2 class="text-white text-[28px] font-bold leading-tight tracking-[-0.015em] text-center">Built on a modern MERN stack</h2>
+<div class="flex flex-wrap justify-center gap-x-12 gap-y-6 text-text-muted-dark font-medium">
+<span class="flex items-center gap-2"><img alt="MongoDB icon" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDve51_270-ttTVFXksGQW2lKOJ6MIXGtDcjzDx5ZVfqX9rEFTzE6yF3o7ToG9xAtBzOB3kVK1DrgGzw0nj34QEXrrTIunY98pqOyGzqUYsgQaPEBSsjKOXeVh_T2Y5a2CPOMkP8s3FTfwY8w5fwHKByOiQL9yvX0Jymq4lVJgJikDiJX2bmNQIIy7isLesMTvBo3ZDZZcBHiezyrUxXlDLYCWQy0Dl-hJ773NV0Xhk6yCshUh5ELO_0E0KRMthgqjct7Pm_VODHbg"/>MongoDB</span>
+<span class="flex items-center gap-2"><img alt="Express.js icon" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVMN_V4mBD_vWsYTlvJwBldJX-D2npPNRP8iLuyxWl1N654qoRlqTeOMm5p1U-dRKrkRuGryNX3GrJxlJNYzPodhiiQSDLotDGn3I6BAB8TOqYl1VzXt5HZXTOejH9tplycstbYhCZZuRBHTvjekqNZMM1y55n4PoxWu_UlYWXBszcrTSb2YbGAfTQSFVgtwLo2vRG32kZnUCDqkVgyKhcK0jqG6kBSSOgue1ioONUglD4vO5zRj-MTpYsDFgasDv3dhQi6aZQRdM"/>Express.js</span>
+<span class="flex items-center gap-2"><img alt="React icon" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB98HW3MDIrXQoSCDFSdnEoV0ONWv4k9j_w96RuCXlChzOjIAULSvxav8ruHFa4qfpXFFRlb_qCAhEtW8ZT0IazX3uv45K_PuSfHfDofDbWaIuvPTAc4z4KvSM0-vB8GvdhcV5aYV23IKZHhwOXtKxMp6at3pzPrVwcIxgEWET-Inm5hTSPCAAOF9Rt86fF3YSF9NNWGtjhCmQyl_2Ad9LzTcM9hDkQ9ZFe0tiohybTranMC_HJU8IXm476XFk_rTaVGaJlZ1Ww65o"/>React</span>
+<span class="flex items-center gap-2"><img alt="Node.js icon" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBbDp-HDNLSD5JY66nAHs_uYrKPrEYMO7EcyYUsqQQl0dXQFqvQZtvlXZUgSh2Su5JenhxonljtZkz48loKO-XXYoq60ogNP5DMqojqXEcybNFKrwIKR6wN0kfyf4XbI_MYeLKUviFjZc6LXRCxGY2tuuKQxm8ibftcn2V8HQK4FwH6i2pKlyMLSnKMqdk28co2lbFkn1QVZv9hARvkYY1N5qBFoGM8Q2pnkum21XdDXGXCkFbvl0EugG133JjGvkYgUSWpfa2ou8"/>Node.js</span>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="mt-auto border-t border-white/10 py-8 px-4">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-4">
+<div class="size-5 text-primary">
+<span class="material-symbols-outlined text-2xl">query_stats</span>
+</div>
+<p class="text-white text-base font-semibold">AppLens</p>
+</div>
+<div class="flex gap-6 text-sm text-text-muted-dark">
+<a class="hover:text-white" href="#">Terms of Service</a>
+<a class="hover:text-white" href="#">Privacy Policy</a>
+<a class="hover:text-white" href="#">Contact</a>
+</div>
+<p class="text-sm text-text-muted-dark/70">© 2024 AppLens Inc. All rights reserved.</p>
+</div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>

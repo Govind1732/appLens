@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AppLens AI Chat Panel</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#1337ec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101322",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display flex justify-center items-start min-h-screen p-4 sm:p-6 md:p-8">
+<div class="relative flex flex-col w-full max-w-[480px] h-[90vh] bg-white dark:bg-[#111218] rounded-xl shadow-2xl overflow-hidden border border-gray-200/10 dark:border-gray-800">
+<!-- Header -->
+<div class="flex-shrink-0">
+<div class="flex flex-wrap justify-between items-center gap-3 p-4 border-b border-gray-200/10 dark:border-gray-800">
+<p class="text-gray-900 dark:text-white tracking-tight text-xl font-bold leading-tight min-w-72">Ask your data</p>
+<button class="p-1.5 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700/50">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+</div>
+<!-- Conversation Area -->
+<div class="flex-1 flex flex-col-reverse p-4 space-y-4 space-y-reverse overflow-y-auto">
+<!-- User Message -->
+<div class="flex justify-end items-start gap-3">
+<div class="flex flex-col items-end gap-2">
+<div class="bg-primary text-white p-3 rounded-xl rounded-br-lg max-w-xs sm:max-w-sm md:max-w-md">
+<p class="text-base font-normal leading-normal">Which seller had the highest revenue last week?</p>
+</div>
+</div>
+</div>
+<!-- AI Response Message -->
+<div class="flex items-start gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-9 shrink-0" data-alt="AppLens AI robot avatar with blue accents" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAWnXogCkqrnGDmm87p2v_3cpN3X-ShwbPeTTtA98fYaLWoeeomfZfdO4nj2beXQ1Y0ujggdsKeN-zlp0Cx1Xj57Li8h1X_x11FBVAWbIBzQSzsmgVu_zFkcj8e3hO7uDa8NSFgemcZFB-TPqKPsrS90IFxA_IRB5L9gL42QKwiR-FtsAL3N3VKyzZAfoXCb2pLxDgH_mKLLOdGKDi7PeDvK_JQUhjo9mzh-Lu2iSNhN4XeXFMDWSU_tGSfCWGFCHz0Vnzn03dj9Es");'></div>
+<div class="flex flex-1 flex-col items-start gap-2">
+<div class="bg-gray-100 dark:bg-[#282b39] p-3 rounded-xl rounded-bl-lg max-w-xs sm:max-w-sm md:max-w-md">
+<p class="text-gray-900 dark:text-white text-base font-bold leading-tight">AppLens</p>
+<p class="text-gray-800 dark:text-gray-300 text-base font-normal leading-normal mt-1">
+                            I analyzed your orders dataset. Seller Anand Jewellers had the highest revenue last week, driven by gold bangles orders from Narasaraopet.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Input Form -->
+<div class="flex-shrink-0 p-4 border-t border-gray-200/10 dark:border-gray-800">
+<!-- Example Prompts -->
+<div class="flex gap-2 overflow-x-auto mb-3 pb-1 -mx-4 px-4">
+<button class="shrink-0 text-sm font-medium px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800/60 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-800">Highest revenue last week?</button>
+<button class="shrink-0 text-sm font-medium px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800/60 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-800">Top 5 products?</button>
+<button class="shrink-0 text-sm font-medium px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800/60 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-800">Show user growth</button>
+</div>
+<!-- Composer -->
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 shrink-0" data-alt="User profile avatar with a purple gradient" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDmqt2r1MRcmnV90NPdb-qJVw2EzBPN2Q9HlN_-hlHdw0XtedNXv9V-3KdVgvPDPUsg7rGN0llwPIyrboHK55YHa22yyjQM-7S73mvU1wW6S24S2Fnhg1ohOoun7NcRA5ClWWBEwCcCoi_LoAsfFh-TPq7iPqhvyOZynuS0E2TP_PxviUlOONWKZ53zRcAbg5QVSU9SxuhjxHbfb4XrK5GikieiXih5GVRPrSKHIlubx3UWstuPR_i9DyQwXgnki8Q_JQj62CZisK0");'></div>
+<label class="flex flex-col min-w-40 h-12 flex-1">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-gray-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border-gray-300 dark:border-gray-700 bg-gray-100 dark:bg-[#282b39] focus:border-primary/50 dark:focus:border-primary/50 h-full placeholder:text-gray-500 dark:placeholder:text-[#9da1b9] px-4 rounded-r-none border-r-0 pr-2 text-base font-normal leading-normal" placeholder="e.g. “Which seller had the highest revenue last week?”" value=""/>
+<div class="flex border border-gray-300 dark:border-gray-700 bg-gray-100 dark:bg-[#282b39] items-center justify-center pr-2 rounded-r-lg border-l-0">
+<button class="min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary text-white text-sm font-medium leading-normal flex gap-2">
+<span class="material-symbols-outlined text-lg">send</span>
+<span class="truncate hidden sm:block">Send</span>
+</button>
+</div>
+</div>
+</label>
+</div>
+</div>
+</div>
+</body></html>

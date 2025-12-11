@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AppLens Use Cases</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#1337ec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101322",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<div class="flex h-full grow flex-col">
+<div class="flex flex-1 justify-center py-5">
+<div class="flex max-w-[960px] flex-1 flex-col">
+<!-- HeroSection -->
+<div class="@container">
+<div class="flex flex-col gap-6 px-4 py-10 @[480px]:gap-8 @[864px]:flex-row @[864px]:items-center">
+<div class="flex w-full flex-col gap-6 @[480px]:min-w-[400px] @[480px]:gap-8 @[864px]:justify-center">
+<div class="flex flex-col gap-2 text-left">
+<h1 class="text-slate-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                                      Power Your Marketplace with AI-Driven Insights
+                                    </h1>
+<h2 class="text-slate-600 dark:text-slate-300 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                                      See how AppLens helps jewelry marketplaces like Sanvi uncover growth opportunities instantly.
+                                    </h2>
+</div>
+<div class="flex flex-wrap gap-3">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+<span class="truncate">Get Started for Free</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+<span class="truncate">Book a Demo</span>
+</button>
+</div>
+</div>
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl @[480px]:h-auto @[480px]:min-w-[400px] @[864px]:w-full" data-alt="Abstract visualization of data analytics for a jewelry marketplace" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA7LoR8X3CQwfMUCaJlF0-usAcmAB7Lm8RKhG0gtMSNlWhnGX9UmSOAEGdGdn8gxlvKTngJUotjHYU3FzsvjwuuwJJgs8rE4nxeWBdZWFF36pt88sTm7O38Ee_sVe9n-4VL_msgancHmEn4tGlemsv_vPsUVL4gy8sEJ-bkFoy09wkL-hz8Y685lLghbSLjCl5oOHPhWDmvsDGxQTGQdfZmd1irPQ1CegyE1x-JG43EInDrzfaGlyNYldPlyAXJTTIp31dImjLgwNk");'></div>
+</div>
+</div>
+<!-- FeatureSection -->
+<div class="flex flex-col gap-10 px-4 py-10 @container">
+<div class="flex flex-col gap-4">
+<h1 class="text-slate-900 dark:text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+                              The Challenge vs. The AppLens Solution
+                            </h1>
+<p class="text-slate-600 dark:text-slate-300 text-base font-normal leading-normal max-w-[720px]">
+                              Building and maintaining a custom analytics platform is costly and complex. AppLens provides a zero-setup, powerful analytics dashboard out-of-the-box, giving you instant insights without the engineering overhead.
+                            </p>
+</div>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-4 p-0">
+<div class="flex flex-1 gap-3 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 flex-col">
+<span class="material-symbols-outlined text-primary">paid</span>
+<div class="flex flex-col gap-1">
+<h2 class="text-slate-900 dark:text-white text-base font-bold leading-tight">Revenue by Seller</h2>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Instantly track revenue breakdowns by seller, city, and product category.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 flex-col">
+<span class="material-symbols-outlined text-primary">trending_up</span>
+<div class="flex flex-col gap-1">
+<h2 class="text-slate-900 dark:text-white text-base font-bold leading-tight">Geo-Trends</h2>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Visualize daily and monthly order trends to identify top-performing products and locations.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 flex-col">
+<span class="material-symbols-outlined text-primary">lightbulb</span>
+<div class="flex flex-col gap-1">
+<h2 class="text-slate-900 dark:text-white text-base font-bold leading-tight">Actionable Insights</h2>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Receive AI-powered suggestions for inventory and marketing strategy.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- SectionHeader -->
+<h2 class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">How It Works</h2>
+<!-- Timeline -->
+<div class="grid grid-cols-[40px_1fr] gap-x-4 px-4 pb-10">
+<div class="flex flex-col items-center gap-2 pt-3">
+<div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined">database</span>
+</div>
+<div class="w-[2px] bg-slate-200 dark:bg-slate-800 grow"></div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-slate-900 dark:text-white text-base font-medium leading-normal">1. Connect Your Data</p>
+<p class="text-slate-600 dark:text-slate-300 text-base font-normal leading-normal">Securely link your CSV files or databases like PostgreSQL and MySQL in minutes.</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-[2px] bg-slate-200 dark:bg-slate-800 h-2"></div>
+<div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined">auto_awesome</span>
+</div>
+<div class="w-[2px] bg-slate-200 dark:bg-slate-800 grow"></div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-slate-900 dark:text-white text-base font-medium leading-normal">2. AI Analyzes</p>
+<p class="text-slate-600 dark:text-slate-300 text-base font-normal leading-normal">Our AI engine processes your data, identifying trends, patterns, and growth opportunities.</p>
+</div>
+<div class="flex flex-col items-center gap-2 pb-3">
+<div class="w-[2px] bg-slate-200 dark:bg-slate-800 h-2"></div>
+<div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined">insights</span>
+</div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-slate-900 dark:text-white text-base font-medium leading-normal">3. Get Instant Insights</p>
+<p class="text-slate-600 dark:text-slate-300 text-base font-normal leading-normal">Explore your interactive dashboard and receive actionable suggestions to grow your business.</p>
+</div>
+</div>
+<!-- AI Suggestion Showcase -->
+<div class="px-4 py-10">
+<div class="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 sm:p-8">
+<div class="flex items-end gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0 bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+</div>
+<div class="flex flex-1 flex-col gap-1 items-start">
+<p class="text-slate-500 dark:text-slate-400 text-[13px] font-medium leading-normal max-w-[360px]">AppLens AI</p>
+<p class="text-base font-normal leading-normal flex max-w-[420px] rounded-lg px-4 py-3 bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white">
+                                      Gold bangles are trending in Narasaraopet. Consider promoting them in that region.
+                                    </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Data Sources Component -->
+<div class="flex flex-col gap-4 px-4 py-10 items-center text-center">
+<h2 class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">Effortless Integration</h2>
+<p class="text-slate-600 dark:text-slate-300 text-base font-normal leading-normal max-w-lg">Connect to your existing data sources in just a few clicks. No complex setup required.</p>
+<div class="flex items-center justify-center gap-8 pt-4 text-slate-400 dark:text-slate-500">
+<span class="material-symbols-outlined !text-4xl">description</span>
+<svg class="h-10 w-auto" fill="none" viewbox="0 0 140 140" xmlns="http://www.w3.org/2000/svg"><path d="M68.833 13.667h-50.5a4.666 4.666 0 0 0-4.666 4.666v102.667a4.667 4.667 0 0 0 4.666 4.667H121.5a4.667 4.667 0 0 0 4.667-4.667v-58.74M68.833 13.667v48.204a4.667 4.667 0 0 0 4.667 4.667h52.667M68.833 13.667L126.167 66.538" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"></path><path d="M41.167 68.833h32.666M41.167 92.167h56" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"></path></svg>
+<svg class="h-10 w-auto" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 21c-4.2 0-8-1.78-8-4v-2.5c0-1.02.62-1.9 1.5-2.29V11c0-4.2 2.8-8 7-8 .7 0 1.38.08 2.03.24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M4 17c0 2.22 3.8 4 8 4s8-1.78 8-4M20 17v-2.5c0-.9.5-1.7 1.22-2.12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M4 12v1.51C4 14.88 7.8 16 12 16c2.4 0 4.6-.4 6.32-1.08" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M21.5 12.52v-1.03c0-.08 0-.17-.01-.25A4.002 4.002 0 0 0 18.2 6.5C18.07 6.22 17.88 6 17.65 5.8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M11.5 6.5v-.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</div>
+</div>
+<!-- CTA Bar -->
+<div class="px-4 py-10">
+<div class="rounded-xl bg-primary/90 flex flex-col items-center gap-6 p-10 text-center">
+<h2 class="text-white text-3xl font-bold leading-tight tracking-tight max-w-lg">Ready to Unlock Your Marketplace's Potential?</h2>
+<p class="text-white/80 text-base font-normal leading-normal max-w-lg">Get instant, AI-powered insights without writing a single line of code. Start your free trial today and see what AppLens can do for you.</p>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-white text-primary text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Get Started for Free</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>

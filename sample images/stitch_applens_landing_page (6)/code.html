@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AppLens Dataset Detail</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#1337ec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101322",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col">
+<header class="sticky top-0 z-10 flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 dark:border-white/10 bg-background-light/80 dark:bg-background-dark/80 px-4 sm:px-6 lg:px-10 py-3 backdrop-blur-sm">
+<div class="flex items-center gap-4 text-slate-800 dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">AppLens</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-center gap-8">
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Dashboard</a>
+<a class="text-slate-800 dark:text-white text-sm font-bold leading-normal" href="#">Datasets</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Reports</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Settings</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Help</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User avatar image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDSi8FaeaTkqnnYTcOOB06gkot4lsVx6z9ZQG3KgzqbCUljuswW0pROyD_-row09w3q7cbKpt15FwJ-iiMwFHWSjR6Xy6gOL9MIZfx-kH4_aYirq4_fuiQUeOcUm3u0ZKy0Gwapkpsh8rYYM5IMII-VsNYASXYvPW3m1GeO6cGhCzmD6zcaqhQX0k8KUMAQfn2bdWs95k38cHd1oMS0sAkc4vJrale_UisVJH1g1Z-XVkAz_vXjHgG0G2VCHNSS1K9ChSetK9u0648");'></div>
+</div>
+</header>
+<main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-10 py-8">
+<div class="flex flex-col lg:flex-row gap-8">
+<!-- Left Column: Main Content -->
+<div class="w-full lg:w-2/3 flex flex-col gap-6">
+<p class="text-slate-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">Dataset: Orders (Last 30 Days)</p>
+<div class="flex border-b border-slate-300 dark:border-slate-700 gap-8">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-primary text-slate-800 dark:text-white pb-[13px] pt-4" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Data preview</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary pb-[13px] pt-4 transition-colors" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Charts</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary pb-[13px] pt-4 transition-colors" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">AI Insight</p>
+</a>
+</div>
+<!-- Data Preview Table -->
+<div class="overflow-hidden rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900/50">
+<div class="overflow-x-auto">
+<table class="w-full">
+<thead>
+<tr class="bg-slate-100 dark:bg-slate-800/50">
+<th class="px-4 py-3 text-left text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal">order_id</th>
+<th class="px-4 py-3 text-left text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal">customer_name</th>
+<th class="px-4 py-3 text-left text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal">purchase_date</th>
+<th class="px-4 py-3 text-left text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal">amount</th>
+<th class="px-4 py-3 text-left text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal">status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-t border-slate-200 dark:border-slate-800">
+<td class="h-[60px] px-4 py-2 text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">#1024</td>
+<td class="h-[60px] px-4 py-2 text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">Alice Johnson</td>
+<td class="h-[60px] px-4 py-2 text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">2023-10-26</td>
+<td class="h-[60px] px-4 py-2 text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">$120.50</td>
+<td class="h-[60px] px-4 py-2 text-sm font-normal leading-normal">
+<span class="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/50 px-3 py-1 text-xs font-medium text-blue-800 dark:text-blue-300">Shipped</span>
+</td>
+</tr>
+<tr class="border-t border-slate-200 dark:border-slate-800">
+<td class="h-[60px] px-4 py-2 text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">#1023</td>
+<td class="h-[60px] px-4 py-2 text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">Bob Williams</td>
+<td class="h-[60px] px-4 py-2 text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">2023-10-26</td>
+<td class="h-[60px] px-4 py-2 text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">$45.00</td>
+<td class="h-[60px] px-4 py-2 text-sm font-normal leading-normal">
+<span class="inline-flex items-center rounded-full bg-yellow-100 dark:bg-yellow-900/50 px-3 py-1 text-xs font-medium text-yellow-800 dark:text-yellow-300">Processing</span>
+</td>
+</tr>
+<tr class="border-t border-slate-200 dark:border-slate-800">
+<td class="h-[60px] px-4 py-2 text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">#1022</td>
+<td class="h-[60px] px-4 py-2 text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">Charlie Brown</td>
+<td class="h-[60px] px-4 py-2 text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">2023-10-25</td>
+<td class="h-[60px] px-4 py-2 text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">$89.99</td>
+<td class="h-[60px] px-4 py-2 text-sm font-normal leading-normal">
+<span class="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/50 px-3 py-1 text-xs font-medium text-blue-800 dark:text-blue-300">Shipped</span>
+</td>
+</tr>
+<tr class="border-t border-slate-200 dark:border-slate-800">
+<td class="h-[60px] px-4 py-2 text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">#1021</td>
+<td class="h-[60px] px-4 py-2 text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">Diana Miller</td>
+<td class="h-[60px] px-4 py-2 text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">2023-10-25</td>
+<td class="h-[60px] px-4 py-2 text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">$250.00</td>
+<td class="h-[60px] px-4 py-2 text-sm font-normal leading-normal">
+<span class="inline-flex items-center rounded-full bg-green-100 dark:bg-green-900/50 px-3 py-1 text-xs font-medium text-green-800 dark:text-green-300">Delivered</span>
+</td>
+</tr>
+<tr class="border-t border-slate-200 dark:border-slate-800">
+<td class="h-[60px] px-4 py-2 text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">#1020</td>
+<td class="h-[60px] px-4 py-2 text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">Ethan Davis</td>
+<td class="h-[60px] px-4 py-2 text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">2023-10-24</td>
+<td class="h-[60px] px-4 py-2 text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">$15.75</td>
+<td class="h-[60px] px-4 py-2 text-sm font-normal leading-normal">
+<span class="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900/50 px-3 py-1 text-xs font-medium text-blue-800 dark:text-blue-300">Shipped</span>
+</td>
+</tr>
+<tr class="border-t border-slate-200 dark:border-slate-800">
+<td class="h-[60px] px-4 py-2 text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">#1019</td>
+<td class="h-[60px] px-4 py-2 text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">Fiona Garcia</td>
+<td class="h-[60px] px-4 py-2 text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">2023-10-24</td>
+<td class="h-[60px] px-4 py-2 text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">$300.10</td>
+<td class="h-[60px] px-4 py-2 text-sm font-normal leading-normal">
+<span class="inline-flex items-center rounded-full bg-red-100 dark:bg-red-900/50 px-3 py-1 text-xs font-medium text-red-800 dark:text-red-300">Cancelled</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Right Column: Chart Builder -->
+<aside class="w-full lg:w-1/3">
+<div class="sticky top-24">
+<div class="bg-white dark:bg-slate-900/50 rounded-xl border border-slate-300 dark:border-slate-700 p-6">
+<h2 class="text-slate-900 dark:text-white text-xl font-bold leading-tight tracking-[-0.015em] mb-6">Create a chart</h2>
+<form class="flex flex-col gap-5">
+<div>
+<label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5" for="chart-name">Chart name</label>
+<input class="w-full rounded-lg border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-primary focus:border-primary" id="chart-name" placeholder="e.g., Weekly Revenue" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5" for="chart-type">Chart type</label>
+<select class="w-full rounded-lg border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-primary focus:border-primary" id="chart-type">
+<option>Bar Chart</option>
+<option>Line Chart</option>
+<option>Pie Chart</option>
+<option>Scatter Plot</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5" for="x-axis">X-axis field</label>
+<select class="w-full rounded-lg border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-primary focus:border-primary" id="x-axis">
+<option>purchase_date</option>
+<option>status</option>
+<option>customer_name</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5" for="y-axis">Y-axis field</label>
+<select class="w-full rounded-lg border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-primary focus:border-primary" id="y-axis">
+<option>amount</option>
+<option>order_id (count)</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5" for="group-by">Group by (optional)</label>
+<select class="w-full rounded-lg border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-primary focus:border-primary" id="group-by">
+<option>None</option>
+<option>status</option>
+</select>
+</div>
+<button class="flex w-full min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-11 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors" type="submit">
+<span class="truncate">Generate Chart</span>
+</button>
+</form>
+</div>
+</div>
+</aside>
+</div>
+</main>
+</div>
+</body></html>
